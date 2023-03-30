@@ -11,6 +11,3 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
 
 -- Desc: Keymaps for Lualine
-
--- Desc: Keymaps for Gitignore
-vim.keymap.set('n', '<leader>gi', gitignore.generate)
