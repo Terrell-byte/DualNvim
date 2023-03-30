@@ -17,6 +17,22 @@ local ensure_packer = function()
     use { "catppuccin/nvim", as = "catppuccin" }
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use 'nvim-treesitter/nvim-treesitter'
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use({
+        "wintermute-cell/gitignore.nvim",
+        requires = {
+           "nvim-telescope/telescope.nvim"
+        }
+   })
+    
   
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
