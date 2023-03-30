@@ -1,5 +1,3 @@
-colorscheme catppuccin = " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-
 require("catppuccin").setup({
     flavour = "mocha", -- latte, frappe, macchiato, mocha
     background = { -- :h background
