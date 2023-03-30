@@ -1,2 +1,2 @@
-colorscheme catppuccin "catppuccin-macchiato
+colorscheme catppuccin = "catppuccin-macchiato
 vim.cmd.colorscheme "catppuccin"
