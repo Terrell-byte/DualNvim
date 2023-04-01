@@ -1,3 +1,4 @@
+local wk = require("which-key")
 wk.register({
   f = {
     name = "file", -- optional group name
