@@ -17,5 +17,5 @@ local mappings = {
   },
   
 }
-local opts = {prefix = '<leader>luk'} -- prefix for all mappings "look up key"
+local opts = {prefix = '<leader><leader>'} -- prefix for all mappings
 wk.register(mappings, opts)
