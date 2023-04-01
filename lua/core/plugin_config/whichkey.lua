@@ -1,12 +1,14 @@
 local wk = require("which-key")
+local mappings = {
+  q = { "<leader>q<cr>", "Quit" },
+  w = { "<leader>wq<cr>", "Save and Quit" },
+  ff = { "<leader>ff<cr>", "Find Files" },
+  ot = { "<leader>ot<cr>", "Toggle NvimTree" },
+  o = { "<leader>o<cr>", "Focus NvimTree" },
+  g = {
+    name = "+Git",
+    i = { "<leader>Gitignore<cr>", "Gitignore" },
+  },
+}
+local opts = {prefix = '<leader>'}
 wk.register(mappings, opts)
-{
-    mode = "n", -- NORMAL mode
-    -- prefix: use "<leader>f" for example for mapping everything related to finding files
-    -- the prefix is prepended to every mapping part of `mappings`
-    prefix = "",
-    buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
-    silent = true, -- use `silent` when creating keymaps
-    noremap = true, -- use `noremap` when creating keymaps
-    nowait = false, -- use `nowait` when creating keymaps
-  }

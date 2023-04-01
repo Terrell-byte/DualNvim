@@ -9,5 +9,3 @@ vim.keymap.set('n', '<leader>q', ':q<CR>')
 
 -- Desc: Keymaps for Telescope
 vim.keymap.set('n', '<leader>ff', ':Telescope find_files<CR>')
-
--- Desc: Keymaps for Lualine
