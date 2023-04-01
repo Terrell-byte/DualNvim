@@ -27,13 +27,13 @@ local ensure_packer = function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use({
-        "wintermute-cell/gitignore.nvim",
+        'wintermute-cell/gitignore.nvim',
         requires = {
-           "nvim-telescope/telescope.nvim"
+           'nvim-telescope/telescope.nvim'
         }
     })
-    use "folke/which-key.nvim"
-   
+    use 'folke/which-key.nvim'
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

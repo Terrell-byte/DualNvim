@@ -20,3 +20,4 @@ wk.register({
     i = { "<cmd>Gitignore<cr>", "Gitignore" },
   },
 }, { prefix = "<leader>" })
+
