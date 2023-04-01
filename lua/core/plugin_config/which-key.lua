@@ -2,26 +2,21 @@ local wk = require("which-key")
 wk.register({
   f = {
     name = "file", -- optional group name
-    f = { "<cmd>Telescope find_files<cr>", "Find File" }, -- create a binding with label
-    r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File", noremap=false, buffer = 123 }, -- additional options for creating the keymap
-    n = { "New File" }, -- just a label. don't create any mapping
-    e = "Edit File", -- same as above
-    ["1"] = "which_key_ignore",  -- special label to hide it in the popup
-    b = { function() print("bar") end, "Foobar" } -- you can also pass functions!
+    f = { "<cmd>Telescope find_files<cr>", "Find File" },
   },
-  q = { "<cmd>Quit<cr>", "Quit" },
+  q = { "<cmd>q<cr>", "Quit" },
   w = {
     name = "Write",
-    w = { "<cmd>Write<cr>", "Write" },
-    q = { "<cmd>WriteQuit<cr>", "Write and Quit" },
+    w = { "<cmd>w<cr>", "Write" },
+    q = { "<cmd>wqa<cr>", "Write and Quit" },
   },
   o = {
     name = "NvimTree",
-    o = { "<leader>Focus<cr>", "Focus NvimTree" },
-    t = { "<leader>OpenTree<cr>", "Toggle NvimTree" },
+    o = { "<cmd>NvimTreeFocus<cr>", "Focus NvimTree" },
+    t = { "<cmd>NvimTreeToggle<cr>", "Toggle NvimTree" },
   },
   g = {
     name = "Git",
-    i = { "<leader>Gitignore<cr>", "Gitignore" },
+    i = { "<cmd>Gitignore<cr>", "Gitignore" },
   },
 }, { prefix = "<leader>" })
