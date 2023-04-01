@@ -14,6 +14,7 @@ local mappings = {
   g = {
     name = "+Git",
     i = { "<leader>gi<cr>", "Gitignore" },
+  }
   
 }
 local opts = {prefix = '<leader>luk'} -- prefix for all mappings "look up key"
