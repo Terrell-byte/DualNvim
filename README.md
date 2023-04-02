@@ -1,4 +1,4 @@
-# DualNvim
+<h1 align="center">DualNvim</h1>
 DualNvim is a versatile and adaptable setup that can be customized to meet the specific needs of different types of tasks. The name "DualNvim" suggests that the configuration has a dual purpose and can be used for multiple applications, making it a convenient and efficient tool for both academic and personal pursuits.
 
 <p align="center">
@@ -8,9 +8,15 @@ DualNvim is a versatile and adaptable setup that can be customized to meet the s
     <a href="https://github.com/Terrell-byte/DualNvim/releases/latest">
       <img src="https://img.shields.io/github/v/release/Terrell-byte/DualNvim?style=for-the-badge&logo=gitbook&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
     </a>
+    <a href="https://github.com/Terrell-byte/DualNvim/stargazers">
+      <img src="https://img.shields.io/github/stars/Terrell-byte/DualNvim?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
 </p>
 
-# Installation
+
+<h1>Getting Started</h1>
+
+## Before You Start
 ***If you already have a pre existing configuration make sure to make a backup of it and also the shared folder***
 
 ```
