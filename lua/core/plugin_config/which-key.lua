@@ -3,7 +3,7 @@ wk.register({
   f = {
     name = "File",
     f = { "Find File" },
-    n = {"Create File" },
+    n = { "Create File" },
   },
   q = { "Quit" },
   w = {
@@ -13,12 +13,12 @@ wk.register({
   },
   o = {
     name = "NvimTree",
-    o = {  "Focus NvimTree" },
-    t = {  "Toggle NvimTree" },
+    o = { "Focus NvimTree" },
+    t = { "Toggle NvimTree" },
   },
   g = {
     name = "Git",
-    i = {  "Gitignore" },
+    i = { "Gitignore" },
   },
 }, { prefix = "<leader>" })
 
