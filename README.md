@@ -8,7 +8,11 @@ DualNvim is a versatile and adaptable setup that can be customized to meet the s
     <a href="https://github.com/Terrell-byte/DualNvim/releases/latest">
       <img src="https://img.shields.io/github/v/release/Terrell-byte/DualNvim?style=for-the-badge&logo=gitbook&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41"/>
     </a>
+    <a href="https://github.com/Terrell-byte/DualNvim/stargazers">
+      <img src="https://img.shields.io/github/stars/Terrell-byte/DualNvim?style=for-the-badge&logo=apachespark&color=eed49f&logoColor=D9E0EE&labelColor=302D41"/>
+    </a>
 </p>
+
 
 # Installation for Linux
 ***If you already have a pre existing configuration make sure to make a backup of it and also the shared folder***
