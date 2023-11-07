@@ -34,6 +34,11 @@ local ensure_packer = function()
     })
     use 'folke/which-key.nvim'
     use "github/copilot.vim"
+    use {
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
+    } 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

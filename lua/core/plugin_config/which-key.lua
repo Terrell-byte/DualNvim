@@ -4,6 +4,7 @@ wk.register({
     name = "File",
     f = { "Find File" },
     n = { "Create File" },
+    r = { "Find References" },
   },
   q = { "Quit" },
   w = {
