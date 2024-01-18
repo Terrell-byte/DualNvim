@@ -48,7 +48,9 @@ nvim
 
 
 # Keymaps
-All custom keymaps are defined in lua/core/keymaps.lua
+```
+Work in progress
+```
 
 
   
