@@ -11,17 +11,17 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "clangd",
-          "csharp_ls",
-          "cssls",
-          "dockerls",
-          "html",
-          "tsserver",
+          "csharp-language-server",
+          "css-lsp",
+          "dockerfile-language-server",
+          "html-lsp",
+          "quick-lint-js"
           "texlab",
-          "lua_ls",
+          "lua-language-server",
           "pyright",
-          "rust_analyzer",
+          "rust-analyzer",
           "sqlls",
-          "slint_lsp",
+          "slint-lsp",
         }
       })
     end
