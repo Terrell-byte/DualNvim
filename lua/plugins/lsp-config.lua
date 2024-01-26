@@ -15,7 +15,7 @@ return {
           "css-lsp",
           "dockerfile-language-server",
           "html-lsp",
-          "quick-lint-js"
+          "quick-lint-js",
           "texlab",
           "lua-language-server",
           "pyright",
