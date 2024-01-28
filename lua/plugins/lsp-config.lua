@@ -10,18 +10,14 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
+          "omnisharp",
           "clangd",
-          "csharp-language-server",
-          "css-lsp",
-          "dockerfile-language-server",
-          "html-lsp",
-          "quick-lint-js",
+          "asm_lsp",
+          "lua_ls",
+          "cssls",
+          "dockerls",
+          "html",
           "texlab",
-          "lua-language-server",
-          "pyright",
-          "rust-analyzer",
-          "sqlls",
-          "slint-lsp",
         }
       })
     end
@@ -32,10 +28,16 @@ return {
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       local lspconfig = require('lspconfig')
-      lspconfig.clangd.setup({
+      lspconfig.omnisharp.setup({
         capabilities = capabilities
       })
-      lspconfig.csharp_ls.setup({ 
+       lspconfig.clangd.setup({
+        capabilities = capabilities
+      })
+      lspconfig.asm_lsp.setup({
+        capabilities = capabilities
+      })
+      lspconfig.lua_ls.setup({
         capabilities = capabilities
       })
       lspconfig.cssls.setup({
@@ -47,28 +49,9 @@ return {
       lspconfig.html.setup({
         capabilities = capabilities
       })
-      lspconfig.tsserver.setup({
-        capabilities = capabilities
-      })
       lspconfig.texlab.setup({
         capabilities = capabilities
       })
-      lspconfig.lua_ls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.pyright.setup({
-        capabilities = capabilities
-      })
-      lspconfig.rust_analyzer.setup({
-        capabilities = capabilities
-      })
-      lspconfig.sqlls.setup({
-        capabilities = capabilities
-      })
-      lspconfig.slint_lsp.setup({
-        capabilities = capabilities
-      })
-
       vim.keymap.set('n', '<leader>cd', vim.lsp.buf.definition, {})
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
