@@ -7,26 +7,17 @@ return {
   },
   {
     'williamboman/mason-lspconfig.nvim',
-    config = function()
-      require("mason-lspconfig").setup({
-        ensure_installed = {
-          "omnisharp",
-          "clangd",
-          "asm_lsp",
-          "lua_ls",
-          "cssls",
-          "dockerls",
-          "html",
-          "texlab",
-        }
-      })
-    end
+    lazy = false,
+    opts = {
+      auto_install = true,
+    },
   },
   {
     'neovim/nvim-lspconfig',
     lazy = false,
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  
       local lspconfig = require('lspconfig')
       lspconfig.omnisharp.setup({
         capabilities = capabilities
