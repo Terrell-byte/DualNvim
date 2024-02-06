@@ -41,6 +41,16 @@ return {
       lspconfig.texlab.setup({
         capabilities = capabilities
       })
+      lsp.config.rust_analyzer.setup({
+        capabilities = capabilities
+        settings = {
+          ['rust-analyzer'] = {
+            diagnostics = {
+            enable = false;
+            }
+          }
+        }
+      })
       vim.keymap.set('n', '<leader>cd', vim.lsp.buf.definition, {})
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
       vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
